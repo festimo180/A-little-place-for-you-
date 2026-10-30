@@ -299,12 +299,12 @@ function App() {
     <div className="site-shell">
       <div className="anime-background" aria-hidden="true">
         <video autoPlay muted loop playsInline preload="metadata">
-          <source src="/videos/anime-background.mp4" type="video/mp4" />
+          <source src={`${import.meta.env.BASE_URL}videos/anime-background.mp4`} type="video/mp4" />
         </video>
         <div className="anime-background-overlay" />
       </div>
 
-      <audio ref={audioRef} src="/audio/runaway.mp3" loop preload="metadata" />
+      <audio ref={audioRef} src={`${import.meta.env.BASE_URL}audio/runaway.mp3`} loop preload="metadata" />
 
       <header className="topbar">
         <button className="brand" onClick={() => navigate("home")}>
@@ -352,7 +352,7 @@ function App() {
             <div className="hero-video-wrap">
               <video className="hero-video" autoPlay muted loop playsInline
                 poster="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85">
-                <source src="/videos/welcome.mp4" type="video/mp4" />
+                <source src={`${import.meta.env.BASE_URL}videos/welcome.mp4`} type="video/mp4" />
               </video>
               <div className="hero-overlay" />
               <div className="hero-content">
